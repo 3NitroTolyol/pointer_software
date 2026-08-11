@@ -9,23 +9,19 @@ import string
 
 
 try:
-length = int(input("Введіть довжину пароля: "))
+    length = int(input("Введіть довжину пароля: "))
 
-    if (length > 0)
+    if (length <= 0):
         print("Помилка: довжина пароля повинна бути більшою за нуль.")
     else:
-
-
-
-        
         characters = string.ascii_letters + string.digits + string.punctuation
 
         password = ''.join(
             random.choice(characters)
-            fro _ in range(length)
+            for _ in range(length)
         )
 
-        print("Ваш пароль:", pasword)
+        print("Ваш пароль:", password)
 
-accept ValueError:
+except ValueError:
     print("Помилка: потрібно ввести ціле число.")
