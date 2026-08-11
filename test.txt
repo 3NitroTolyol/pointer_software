@@ -1,1 +1,2 @@
 Hello, I am the new file. 
+Hello, new file. I am the creator
